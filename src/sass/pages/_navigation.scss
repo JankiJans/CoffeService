@@ -3,11 +3,56 @@
   height: 90vh;
   background-size: cover;
 }
-
 .main-title {
   font-family: $font-header;
   color: $main-color;
   font-weight: 700;
   letter-spacing: 5px;
   font-size: 5.5rem;
+  position: relative;
+}
+.main-title::after {
+  position: absolute;
+  content: '';
+  bottom: -2.5rem;
+  left: 50%;
+  width: 250px; 
+  height: 5px;
+  transform: translate(-50%,-50%);
+  background: $main-color;
+}
+
+.navbar-brand {
+  font-family: $font-header;
+  letter-spacing: 5px;
+  font-size: 2rem;
+  font-weight: 600;
+  .brand-sub-text {
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 5px;
+  }
+}
+
+.navbar-nav {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.discover-button {
+  position: absolute; 
+  bottom: 20%; 
+  left: 50%; 
+  transform: translateX(-50%);
+  .discover-text {
+    color: $color-light;
+    font-family: $font-header;
+    letter-spacing: 5px;
+  }
+
+  .icon-link {
+    color: $color-light;
+    font-size: 2rem;
+    margin: 40%;
+  }
 }
