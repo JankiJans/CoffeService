@@ -2,23 +2,23 @@ import { select, templates } from '../settings.js';
 import utils from '../utils.js';
 
 class Contact {
-    constructor(element) {
-        const thisContact = this;
+  constructor(element) {
+    const thisContact = this;
 
-        thisContact.render(element);
-    }
+    thisContact.render(element);
+  }
 
-    render(){
-        const thisContact = this;
+  render(){
+    const thisContact = this;
         
-        const generatedHTML = templates.contactWidget();
-        const generatedDom = utils.createDOMFromHTML(generatedHTML);
-        const contactWrapper = document.querySelector(select.containerOf.contact);
+    const generatedHTML = templates.contactWidget();
+    const generatedDom = utils.createDOMFromHTML(generatedHTML);
+    const contactWrapper = document.querySelector(select.containerOf.contact);
 
-        contactWrapper.appendChild(generatedDom);
+    contactWrapper.appendChild(generatedDom);
 
-        thisContact.dom = {};
-    }
+    thisContact.dom = {};
+  }
 }
 
 export default Contact;

@@ -3,23 +3,23 @@ import utils from '../utils.js';
 
 
 class Home {
-    constructor(element) {
-        const thisHome = this;
+  constructor(element) {
+    const thisHome = this;
 
-        thisHome.render(element);
-    }
+    thisHome.render(element);
+  }
 
-    render(){
-        const thisHome = this;
+  render(){
+    const thisHome = this;
         
-        const generatedHTML = templates.homeWidget();
-        const generatedDom = utils.createDOMFromHTML(generatedHTML);
-        const homeWrapper = document.querySelector(select.containerOf.home);
+    const generatedHTML = templates.homeWidget();
+    const generatedDom = utils.createDOMFromHTML(generatedHTML);
+    const homeWrapper = document.querySelector(select.containerOf.home);
 
-        homeWrapper.appendChild(generatedDom);
+    homeWrapper.appendChild(generatedDom);
 
-        thisHome.dom = {};
-    }
+    thisHome.dom = {};
+  }
 }
 
 export default Home;

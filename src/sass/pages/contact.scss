@@ -1,9 +1,9 @@
 #pages {
-    > * {
-      display: none;
-    }
-  
-    > .active {
-      display: block;
-    }
+  > * {
+    display: none;
   }
+  
+  > .active {
+    display: block;
+  }
+}
