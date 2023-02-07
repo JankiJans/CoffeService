@@ -8,7 +8,7 @@ class Contact {
     thisContact.render(element);
   }
 
-  render(){
+  render(element){
     const thisContact = this;
         
     const generatedHTML = templates.contactWidget();
@@ -17,8 +17,24 @@ class Contact {
 
     contactWrapper.appendChild(generatedDom);
 
-    thisContact.dom = {};
+    thisContact.dom = {
+      wrapper: element,
+      Submitbutton: element.querySelector(select.containerOf.Submitbutton),
+    };
+
+    thisContact.dom.inputs = {
+      name: element.querySelector(select.containerOf.input.name),
+      title: element.querySelector(select.containerOf.input.title),
+      message: element.querySelector(select.containerOf.input.message),
+    };
   }
+
+  
+
+  initActions(){
+    
+  };
+  
 }
 
 export default Contact;

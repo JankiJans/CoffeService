@@ -19,7 +19,7 @@ const app = {
         //console.log('parsedResponse', parsedResponse);
 
         thisApp.data.products = parsedResponse;
-        app.initProducts();
+        thisApp.initProducts();
       });
     //console.log('thisApp.data', JSON.stringify(thisApp.data));
   },
@@ -83,6 +83,7 @@ const app = {
 
     thisApp.homeElem = document.querySelector(select.containerOf.home);
     thisApp.homePage = new Home(thisApp.homeElem);
+    
 
   },
 
@@ -108,8 +109,22 @@ const app = {
     thisApp.initHome();
     thisApp.initContact();
     thisApp.initProductPage();
-
   },
 };
 
 app.init();
+
+// function navBarScroll () {
+//   const navBar = document.querySelector('.nav');
+
+//   window.addEventListener('scroll', function () {
+//     if(window.pageYOffset > 100) {
+//       navBar.classList.add('bg-dark');
+//     } else {
+//       navBar.classList.remove('bg-dark');
+//     }
+//   });
+// }
+
+// navBarScroll();
+

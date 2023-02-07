@@ -3,10 +3,10 @@ import utils from '../utils.js';
 
 
 class Home {
-  constructor(element) {
+  constructor() {
     const thisHome = this;
 
-    thisHome.render(element);
+    thisHome.render();
   }
 
   render(){

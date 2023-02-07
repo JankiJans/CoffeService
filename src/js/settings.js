@@ -10,6 +10,12 @@ export const select = {
     home: '.home-wrapper',
     productPage: '.product-wrapper',
     contact: '.contact-wrapper',
+    Submitbutton: '#submit-btn',
+    input: {
+      name: '#name',
+      title: '#title',
+      message: '#message',
+    }
   },
 
   navLinks: {
