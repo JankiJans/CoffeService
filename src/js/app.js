@@ -114,17 +114,17 @@ const app = {
 
 app.init();
 
-// function navBarScroll () {
-//   const navBar = document.querySelector('.nav');
+function navBarScroll () {
+  const navBar = document.querySelector('nav');
 
-//   window.addEventListener('scroll', function () {
-//     if(window.pageYOffset > 100) {
-//       navBar.classList.add('bg-dark');
-//     } else {
-//       navBar.classList.remove('bg-dark');
-//     }
-//   });
-// }
+  window.addEventListener('scroll', function () {
+    if(window.pageYOffset > 100) {
+      navBar.classList.add('bg-dark');
+    } else {
+      navBar.classList.remove('bg-dark');
+    }
+  });
+}
 
-// navBarScroll();
+navBarScroll();
 
