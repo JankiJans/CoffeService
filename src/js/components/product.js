@@ -2,16 +2,16 @@ import { select, templates } from '../settings.js';
 import utils from '../utils.js';
 
 class Product {
-  constructor(element) {
+  constructor(data) {
     const thisProduct = this;
 
-    thisProduct.render(element);
+    thisProduct.render(data);
   }
 
-  render(){
+  render(data){
     const thisProduct = this;
         
-    const generatedHTML = templates.productWidget();
+    const generatedHTML = templates.productWidget(data);
     const generatedDom = utils.createDOMFromHTML(generatedHTML);
     const productWrapper = document.querySelector(select.containerOf.productPage);
 

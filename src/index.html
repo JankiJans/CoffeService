@@ -34,7 +34,7 @@
         </div>
     </nav>
     <div class="navbar-image w-100 d-flex justify-content-center align-items-center">
-        <div class="navbar content" style="bottom: 4rem;">
+        <div class="navbar content">
             <h1 class="main-title">HOME OF<br>ORIGINAL TASTES</h1>
         </div>
         <div class="discover-button">
@@ -93,10 +93,19 @@
     </script>
 
     <script id="template-product-list" type="text/x-handlebars-template">
-        <div class="product">
-            <h2>{{name}}</h2>
-            <img src="{{image}}" alt="{{name}}">
-        </div>
+        <div class="container my-5">
+            <div class="row">
+              <div class="col-md-6">
+                <h3>{{name}}</h3>
+                <p>{{description}}</p>
+                <p><strong>Roasting:</strong>{{roasting}}</p>
+                <p><strong>Intensity:</strong>{{intensity}}</p>
+              </div>
+              <div class="product-image col-md-6">
+                <img src='{{image}}' alt='prod'>
+              </div>
+            </div>
+          </div>
     </script>
 
     <script id="template-contact-widget" type="text/x-handlebars-template">
