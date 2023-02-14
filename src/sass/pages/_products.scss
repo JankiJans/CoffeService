@@ -7,3 +7,11 @@
     display: block;
   }
 }
+
+.product-text:nth-child(3) {
+  order: 2;
+}
+
+.product-image:nth-child(3) {
+  order: 1;
+}

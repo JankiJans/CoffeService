@@ -39,7 +39,7 @@
         </div>
         <div class="discover-button">
             <h2 class="discover-text">DISCOVER</h2>
-            <a href="#products" class="icon-link"><i class="fa-regular fa-circle-down"></i></a>
+            <a href="#products" class="icon-link"><i class="fa-regular fa-circle-down"></i>discover</a>
         </div>
     </div>
 
@@ -93,19 +93,23 @@
     </script>
 
     <script id="template-product-list" type="text/x-handlebars-template">
-        <div class="container my-5">
+        <div class="container prod my-5">
+          <article class="products-wrapper">
             <div class="row">
-              <div class="col-md-6">
+              <div class="product-text col-12 col-md-6">
                 <h3>{{name}}</h3>
-                <p>{{description}}</p>
-                <p><strong>Roasting:</strong>{{roasting}}</p>
-                <p><strong>Intensity:</strong>{{intensity}}</p>
+                <div class="description">
+                  <p>{{description}}</p>
+                </div>
+                <p class='roasting'>Roasting: <span>{{roasting}}</span></p>
+                <p class='intensity'>Intensity: <span>{{intensity}}</span></p>
               </div>
-              <div class="product-image col-md-6">
+              <div class="product-image col-12 col-md-6">
                 <img src='{{image}}' alt='prod'>
               </div>
             </div>
-          </div>
+          </article>
+        </div>
     </script>
 
     <script id="template-contact-widget" type="text/x-handlebars-template">
