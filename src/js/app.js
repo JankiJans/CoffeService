@@ -94,12 +94,12 @@ const app = {
     thisApp.contactPage = new Contact(thisApp.contactElem);
   },
 
-  initProductPage: function () {
-    const thisApp = this;
+  // initProductPage: function () {
+  //   const thisApp = this;
 
-    thisApp.productPageElem = document.querySelector(select.containerOf.productPage);
-    thisApp.productPage = new Product(thisApp.productPageElem);
-  },
+  //   thisApp.productPageElem = document.querySelector(select.containerOf.productPage);
+  //   thisApp.productPage = new Product(thisApp.productPageElem);
+  // },
 
   init: function () {
     const thisApp = this;
@@ -108,7 +108,7 @@ const app = {
     thisApp.initPages();
     thisApp.initHome();
     thisApp.initContact();
-    thisApp.initProductPage();
+    // thisApp.initProductPage();
   },
 };
 

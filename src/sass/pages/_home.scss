@@ -8,7 +8,10 @@
   }
 }
 
-
+.about-us-txt{
+  text-align: center;
+  color: $main-color;
+}
 .navbar-image-home {
   background-image: url('../images/about-us.jpg');
   height: 60vh;
@@ -17,4 +20,19 @@
 
 .carousel-item img {
   padding-left: 10rem;
+}
+
+.carousel-txt{
+  color: $color-light;
+  text-align: left;
+  padding-top: 3rem;
+  padding-left: 2rem;
+}
+
+.caption{
+  max-width: 500px;
+}
+
+.names{
+  padding-bottom: 1rem;
 }

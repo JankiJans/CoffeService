@@ -19,6 +19,15 @@ class Home {
     homeWrapper.appendChild(generatedDom);
 
     thisHome.dom = {};
+
+    
+    const titles = ["Home of Original Tastes", "Real Venezuela, Real Coffee", "Taste Real Venezuela"];
+
+    const randomTitle = titles[Math.floor(Math.random() * titles.length)];
+
+    const mainTitle = document.querySelector('.main-title');
+    mainTitle.textContent = randomTitle;
+
   }
 }
 
