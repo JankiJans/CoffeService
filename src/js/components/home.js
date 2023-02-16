@@ -21,7 +21,7 @@ class Home {
     thisHome.dom = {};
 
     
-    const titles = ["Home of Original Tastes", "Real Venezuela, Real Coffee", "Taste Real Venezuela"];
+    const titles = ['Home of Original Tastes', 'Real Venezuela, Real Coffee', 'Taste Real Venezuela'];
 
     const randomTitle = titles[Math.floor(Math.random() * titles.length)];
 

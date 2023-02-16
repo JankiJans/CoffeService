@@ -11,6 +11,7 @@ export const select = {
     productPage: '.product-wrapper',
     contact: '.contact-wrapper',
     Submitbutton: '#submit-btn',
+    homeProduct: '.home-products',
     input: {
       name: '#name',
       title: '#title',

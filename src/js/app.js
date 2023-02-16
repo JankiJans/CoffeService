@@ -72,9 +72,8 @@ const app = {
   initProducts: function () {
     const thisApp = this;
 
-    for (let productData in thisApp.data.products) {
-      new Product(thisApp.data.products[productData]);
-    }
+    new Product(thisApp.data.products);
+    
     console.log('thisApp.data.products', thisApp.data.products);
   },
 

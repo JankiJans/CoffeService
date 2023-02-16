@@ -11,11 +11,16 @@ class Product {
   render(data){
     const thisProduct = this;
         
-    const generatedHTML = templates.productWidget(data);
+    const generatedHTML = templates.productWidget({
+      products: data
+    });
     const generatedDom = utils.createDOMFromHTML(generatedHTML);
+    const generatedDomHome = utils.createDOMFromHTML(generatedHTML);
     const productWrapper = document.querySelector(select.containerOf.productPage);
+    const homeProductWrapper = document.querySelector(select.containerOf.homeProduct);
 
     productWrapper.appendChild(generatedDom);
+    homeProductWrapper.appendChild(generatedDomHome);
 
     thisProduct.dom = {};
   }
