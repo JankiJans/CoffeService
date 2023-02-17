@@ -72,7 +72,6 @@
 }
 
 @media (max-width: 576px){
-
   .home-products .prod:nth-of-type(2) .product-image {
     order: 2;
   }
@@ -88,9 +87,16 @@
 }
 
 @media (max-width: 768px){
-
   .carousel-item img {
     padding: 0;
+  }
+
+  .home-products .prod:nth-of-type(2) .product-image {
+    order: 2;
+  }
+  
+  .home-products .prod:nth-of-type(2) .product-text {
+    order: 1;
   }
 
 }

@@ -88,3 +88,21 @@
     padding-top: 5rem;
   }
 }
+
+@media (max-width: 991px) {
+  .content{
+    bottom: 0;
+  }
+}
+
+@media (max-width: 1048px){
+  .main-title{
+    text-align: center;
+  }
+}
+
+@media (max-width: 1197px){
+  .main-title{
+    text-align: center;
+  }
+}

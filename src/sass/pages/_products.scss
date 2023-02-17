@@ -108,7 +108,6 @@
 }
 
 @media (max-width: 576px){
-
   .product-wrapper .prod:nth-of-type(2) .product-image {
     order: 2;
   }
@@ -123,8 +122,17 @@
 
 }
 
-@media (max-width: 1199px){
+@media (max-width: 767px){
+  .product-wrapper .prod:nth-of-type(2) .product-image {
+    order: 2;
+  }
+  
+  .product-wrapper .prod:nth-of-type(2) .product-text {
+    order: 1;
+  }
+}
 
+@media (max-width: 1199px){
   .bestseller-container img {
     position: absolute;
     top: 20%;
